@@ -114,5 +114,3 @@ public class LinkedUnits<E> implements Iterable<E> {
         }
     }
 }
-
-

@@ -2,10 +2,6 @@ package hmLesson3;
 
 public class Main {
     public static void main(String[] args) {
-//       Создать список по аналогии LinkedList (список связанных элементов), реализовать в нем iterable интерфейс.
-//       Список должен содержать элементы со ссылкой на следующий элемент
-//       (если показалось мало, то реализовать ссылку и на предыдущий элемент)
-//       Формат сдачи: ссылка на гитхаб проект.
 
         LinkedUnits<String> linkedUnits = new LinkedUnits<>();
         linkedUnits.add("str1");
@@ -18,8 +14,7 @@ public class Main {
         System.out.printf("list size: %d\n", linkedUnits.size());
 
         System.out.println("---for-each---");
-        for (LinkedUnits<String> it = linkedUnits; it.hasNext(); ) {
-            String value = it.next();
+        for (String value : linkedUnits) {
             System.out.println(value);
         }
 
